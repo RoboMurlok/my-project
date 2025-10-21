@@ -9,46 +9,45 @@ export default function StudentsPage() {
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
-  if (!login) {
-    window.location.href = "/";
-  }
-
-  async function getStudents() {
-    const classroom = sessionStorage.getItem("classroom");
-    if (!classroom) {
-      console.warn("⚠️ classroom не найден в sessionStorage");
-      setLoading(false);
+  // ✅ Получаем login и classroom только на клиенте
+  useEffect(() => {
+    const login = sessionStorage.getItem("login");
+    if (!login) {
+      window.location.href = "/";
       return;
     }
 
-    try {
-      const res = await fetch(`/api/students?classroom=${classroom}`);
-      const data = await res.json();
-
-      if (data.success) {
-        setStudents(data.students);
-      } else {
-        console.error("Ошибка:", data.message);
+    async function getStudents() {
+      const classroom = sessionStorage.getItem("classroom");
+      if (!classroom) {
+        console.warn("⚠️ classroom не найден в sessionStorage");
+        setLoading(false);
+        return;
       }
-    } catch (err) {
-      console.error("Fetch error:", err);
-    } finally {
-      setLoading(false);
+
+      try {
+        const res = await fetch(`/api/students?classroom=${classroom}`);
+        const data = await res.json();
+
+        if (data.success) {
+          setStudents(data.students);
+        } else {
+          console.error("Ошибка:", data.message);
+        }
+      } catch (err) {
+        console.error("Fetch error:", err);
+      } finally {
+        setLoading(false);
+      }
     }
-  }
+
+    getStudents();
+  }, [router]);
 
   const handleClick = (student) => {
     setSelected(student.name);
     router.push(`/students/${encodeURIComponent(student.name)}`);
   };
-
-  useEffect(() => {
-    const login = sessionStorage.getItem("login");
-    if (!login) {
-      window.location.href = "/";
-    }
-    getStudents();
-  }, []);
 
   if (loading) return <h1>Завантаження...</h1>;
 
