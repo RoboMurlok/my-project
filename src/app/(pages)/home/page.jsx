@@ -194,9 +194,9 @@ export default function page() {
         {alertMessage && <div className="alert-message">{alertMessage}</div>}
         <article>
           <div>
-            <MyButton className="green" onClick={addBulk}>
+            {/* <MyButton className="green" onClick={addBulk}>
               💾 Добавити клас учнів
-            </MyButton>
+            </MyButton> */}
           </div>
           <MyButton className="red" onClick={deleteClass}>
             ♻ Видалити клас {classroom}
