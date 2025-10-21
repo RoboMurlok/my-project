@@ -8,7 +8,6 @@ export default function StudentsPage() {
   const [selected, setSelected] = useState(null);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
-  const login = sessionStorage.getItem("login");
 
   if (!login) {
     window.location.href = "/";
