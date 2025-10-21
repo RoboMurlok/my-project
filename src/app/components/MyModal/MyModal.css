@@ -1,0 +1,18 @@
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(1px);
+}
+
+.mask {
+  border-radius: 12px;
+  background: var(--cyan1);
+  padding: 10px;
+  margin: 10px;
+}

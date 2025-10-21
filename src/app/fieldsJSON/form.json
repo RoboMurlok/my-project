@@ -1,0 +1,64 @@
+{
+  "edit": [
+    { "title": "Редагування учня" },
+    { "type": "text", "name": "_id", "hidden": true },
+    { "type": "text", "name": "name", "label": "Имя", "required": true },
+    { "type": "text", "name": "age", "label": "Дата рождения" },
+    { "type": "textarea", "name": "adress", "label": "Адрес" },
+    { "type": "textarea", "name": "mom", "label": "Мама" },
+    { "type": "textarea", "name": "father", "label": "Папа" },
+    { "type": "text", "name": "phone", "label": "Телефон" },
+    { "type": "text", "name": "status", "label": "Статус" }
+  ],
+  "add": [
+    { "title": "Додавання учня" },
+    { "type": "text", "name": "name", "label": "Имя", "required": true },
+    { "type": "text", "name": "age", "label": "Дата рождения" },
+    { "type": "textarea", "name": "adress", "label": "Адрес" },
+    { "type": "textarea", "name": "mom", "label": "Мама" },
+    { "type": "textarea", "name": "father", "label": "Папа" },
+    { "type": "text", "name": "phone", "label": "Телефон" },
+    { "type": "text", "name": "status", "label": "Статус" }
+  ],
+  "register": [
+    { "title": "Регістрацiя" },
+    {
+      "type": "text",
+      "name": "username",
+      "id": "username",
+      "label": "Введите класс (например 5б)",
+      "required": true
+    },
+    {
+      "type": "password",
+      "name": "password",
+      "id": "password",
+      "label": "Пароль для входа",
+      "required": true
+    },
+    {
+      "type": "password",
+      "name": "password_edit",
+      "id": "password_edit",
+      "label": "Пароль для редактирования",
+      "required": true
+    }
+  ],
+  "login": [
+    { "title": "Вхід" },
+    {
+      "type": "text",
+      "name": "username",
+      "id": "username",
+      "label": "Введите класс (например 5б)",
+      "required": true
+    },
+    {
+      "type": "password",
+      "name": "password",
+      "id": "password",
+      "label": "Пароль для входа",
+      "required": true
+    }
+  ]
+}

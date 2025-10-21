@@ -1,0 +1,61 @@
+button,
+.btn {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: var(--blue1);
+  color: var(--white1);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: inset 0 1px 1px var(--white2), inset 0 -2px 1px var(--gray2),
+    0 1px 1px var(--gray1);
+  transition: all 0.15s ease;
+
+  &:hover {
+    background: var(--blue2);
+    box-shadow: inset 0 2px 2px var(--white1), inset 0 -3px 2px var(--gray3),
+      0 2px 2px var(--black3);
+  }
+
+  &:active {
+    background: var(--blue3);
+    transform: scale(0.9);
+    box-shadow: inset 0 4px 6px var(--black2), inset 0 -3px 4px var(--white3);
+  }
+
+  &:disabled {
+    background: var(--gray1);
+    box-shadow: inset 0 2px 1px var(--white2), inset 0 -2px 1px var(--gray2),
+      0 2px 1px var(--gray1);
+    cursor: not-allowed;
+  }
+}
+
+.default {
+  background: var(--white3);
+  color: var(--black1);
+  border-radius: 0;
+  box-shadow: none;
+}
+/* 
+.red {
+  background: var(--red1);
+}
+
+.green {
+  background: var(--green1);
+} */
+
+.red:hover {
+  background: var(--red2);
+}
+.green:hover {
+  background: var(--green2);
+}
+.red:active {
+  background: var(--red1);
+}
+.green:active {
+  background: var(--green1);
+}

@@ -1,0 +1,53 @@
+.class {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  color: var(--red2);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.class th {
+  border: 2px solid var(--gray3);
+  padding: 10px;
+  color: var(--gold3);
+  background: var(--cyan1);
+  font-size: 1.2rem;
+}
+.class td {
+  border: 2px solid var(--gray3);
+  padding: 5px;
+  color: var(--black1);
+  background: var(--white3);
+}
+
+.class td:nth-child(1) {
+  color: var(--gold3);
+  background: var(--cyan1);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.class .red {
+  cursor: pointer;
+}
+
+.class .green {
+  cursor: pointer;
+}
+
+.class .red:hover {
+  background-color: var(--red2);
+}
+.class .green:hover {
+  background-color: var(--green2);
+}
+.class .red:active {
+  background-color: var(--red1);
+}
+.class .green:active {
+  background-color: var(--green1);
+}

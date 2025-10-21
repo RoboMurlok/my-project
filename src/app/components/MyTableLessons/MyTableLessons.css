@@ -1,0 +1,62 @@
+.lessons {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  color: var(--red2);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.lessons th {
+  color: var(--gold3);
+  border: 2px solid var(--gray3);
+  background: var(--cyan1);
+}
+
+.lessons .vertical {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  padding: 10px 0px;
+  text-align: end;
+  writing-mode: vertical-rl;
+}
+.lessons tr {
+  position: relative;
+}
+.lessons td {
+  border: 2px solid var(--gray3);
+  /* text-align: center; */
+  color: var(--black1);
+  background: var(--white3);
+}
+
+.lessons td:nth-child(1) {
+  color: var(--gold3);
+  background: var(--cyan1);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.lessons .red {
+  cursor: pointer;
+}
+
+.lessons .green {
+  cursor: pointer;
+}
+
+.lessons .red:hover {
+  background-color: var(--red2);
+}
+.lessons .green:hover {
+  background-color: var(--green2);
+}
+.lessons .red:active {
+  background-color: var(--red1);
+}
+.lessons .green:active {
+  background-color: var(--green1);
+}

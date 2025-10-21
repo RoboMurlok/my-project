@@ -1,0 +1,12 @@
+{
+  "navLinksRoot": [
+    { "href": "/login", "label": "Вхід" },
+    { "href": "/register", "label": "Регістрація" }
+  ],
+  "navLinksClass": [
+    { "href": "/home", "label": "Головна" },
+    { "href": "/lessons", "label": "Уроки" },
+    { "href": "/classroom", "label": "Клас" },
+    { "href": "/students", "label": "Учні" }
+  ]
+}

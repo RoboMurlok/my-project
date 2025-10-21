@@ -1,0 +1,30 @@
+.student {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  color: var(--red2);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.student td {
+  border: 2px solid var(--gray3);
+  text-align: center;
+  color: var(--blue1);
+  background: var(--white3);
+}
+
+.student td:nth-child(1) {
+  width: 300px;
+  padding: 2px;
+  background: var(--cyan1);
+  font-size: 1.2rem;
+}
+
+.point {
+  width: 30px;
+  height: 30px;
+}
