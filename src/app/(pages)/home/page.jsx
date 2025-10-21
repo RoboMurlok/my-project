@@ -174,7 +174,6 @@ export default function page() {
       console.error("Fetch error:", err);
     }
   }
-  
 
   return (
     <>
@@ -187,12 +186,14 @@ export default function page() {
             getDataForm={addLessons}
           />
         </section>
-        <MyForm fieldsFormJSON={add} getDataForm={addStudent} />
-        {successMessage && (
-          <div className="success-message">{successMessage}</div>
-        )}
-        {alertMessage && <div className="alert-message">{alertMessage}</div>}
         <article>
+          {" "}
+          <MyForm fieldsFormJSON={add} getDataForm={addStudent} />
+          {successMessage && (
+            <div className="success-message">{successMessage}</div>
+          )}
+          {alertMessage && <div className="alert-message">{alertMessage}</div>}
+          <article></article>
           <div>
             {/* <MyButton className="green" onClick={addBulk}>
               💾 Добавити клас учнів
