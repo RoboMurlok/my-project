@@ -91,7 +91,7 @@ export default function MyStudentTable({
                   {subject.value}
                 </MyButton>
               </td>
-              {Array.from({ length: 10 }).map((_, i) => (
+              {Array.from({ length: 60 }).map((_, i) => (
                 <td key={i} className="point">
                   <select
                     defaultValue={lessonPoints[subject.name]?.[i] || ""}

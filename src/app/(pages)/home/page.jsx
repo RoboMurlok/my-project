@@ -187,18 +187,16 @@ export default function page() {
           />
         </section>
         <article>
-          {" "}
           <MyForm fieldsFormJSON={add} getDataForm={addStudent} />
           {successMessage && (
             <div className="success-message">{successMessage}</div>
           )}
           {alertMessage && <div className="alert-message">{alertMessage}</div>}
-          <article></article>
-          <div>
-            {/* <MyButton className="green" onClick={addBulk}>
+          {/* <div>
+            <MyButton className="green" onClick={addBulk}>
               💾 Добавити клас учнів
-            </MyButton> */}
-          </div>
+            </MyButton>
+          </div> */}
           <MyButton className="red" onClick={deleteClass}>
             ♻ Видалити клас {classroom}
           </MyButton>
