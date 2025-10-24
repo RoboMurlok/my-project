@@ -66,7 +66,7 @@ export async function GET(req) {
     const StudentModel =
       conn.models.Student || conn.model("Student", Student.schema);
 
-    const studentsDb = await StudentModel.find();
+    const studentsDb = await StudentModel.find().sort({ name: 1 });
 
     const students = studentsDb.map((s) => ({
       ...s._doc,
